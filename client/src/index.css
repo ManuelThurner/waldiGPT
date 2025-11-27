@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Antropos';
+  src: url('/fonts/antrf___.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* LIGHT MODE */
 :root {
   --button-outline: rgba(0,0,0, .10);
@@ -44,7 +52,7 @@
   --chart-4: 280 55% 45%;
   --chart-5: 150 45% 35%;
   --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Libre Baskerville', Georgia, serif;
+  --font-serif: 'Antropos', 'Libre Baskerville', Georgia, serif;
   --font-mono: 'JetBrains Mono', monospace;
   --radius: .5rem;
   --shadow-2xs: 0px 2px 0px 0px hsl(30 5% 20% / 0.02);

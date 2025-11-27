@@ -1,23 +1,25 @@
-# Rudolf Steiner KI-Assistent
+# WaldiGPT
 
 ## Überblick
-Ein deutschsprachiger KI-Chatbot im Geiste Rudolf Steiners, spezialisiert auf Waldorfpädagogik und Anthroposophie. Der Assistent verkörpert Rudolf Steiners Denkweise, Terminologie und pädagogische Prinzipien.
+WaldiGPT ist ein deutschsprachiger KI-Chatbot im Geiste Rudolf Steiners, spezialisiert auf Waldorfpädagogik und Anthroposophie. Der Assistent verkörpert Rudolf Steiners Denkweise, Terminologie und pädagogische Prinzipien.
 
 ## Aktuelle Features
 - Vollständig deutschsprachige Benutzeroberfläche
 - Chat-Interface im Stil klassischer Gespräche
 - Sorgfältig ausgearbeiteter System-Prompt mit Rudolf Steiners Lehren
-- OpenAI GPT-5 Integration mit kontextbewusstem Gesprächsverlauf
+- OpenAI GPT-4o Integration mit kontextbewusstem Gesprächsverlauf
 - Fokus auf Waldorfpädagogik, Anthroposophie und ganzheitliche Bildung
 - Welcome-Screen mit vorgeschlagenen Fragen
 - Responsives Design mit warmen Erdtönen (Waldorf-Ästhetik)
+- Antropos Waldorf-Schrift für Überschriften
 
 ## Projektstruktur
 
 ### Frontend (React + TypeScript)
 - `client/src/pages/chat.tsx` - Haupt-Chat-Komponente mit allen UI-Elementen
 - `client/src/App.tsx` - Router-Konfiguration
-- `client/src/index.css` - Tailwind CSS mit Waldorf-inspirierten Farben
+- `client/src/index.css` - Tailwind CSS mit Waldorf-inspirierten Farben und Antropos-Schrift
+- `client/public/fonts/` - Antropos Waldorf-Schrift
 
 ### Backend (Express + TypeScript)
 - `server/routes.ts` - Chat-API-Endpunkt
@@ -35,7 +37,7 @@ Ein deutschsprachiger KI-Chatbot im Geiste Rudolf Steiners, spezialisiert auf Wa
 
 ## Designrichtlinien
 - Warme Erdtöne (Terrakotta, Beige, Ocker)
-- Libre Baskerville für Überschriften (Serife für wissenschaftlichen Charakter)
+- Antropos Waldorf-Schrift für Überschriften
 - Inter für UI-Elemente
 - Großzügige Abstände für kontemplative Atmosphäre
 - Dezente Animationen

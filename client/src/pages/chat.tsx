@@ -37,7 +37,7 @@ function TypingIndicator() {
   return (
     <div className="flex items-start gap-4 mr-auto max-w-2xl" data-testid="typing-indicator">
       <Avatar className="h-10 w-10 border border-border">
-        <AvatarFallback className="bg-primary/10 text-primary font-serif text-sm">RS</AvatarFallback>
+        <AvatarFallback className="bg-primary/10 text-primary font-serif text-sm">WG</AvatarFallback>
       </Avatar>
       <div className="rounded-2xl rounded-tl-sm border bg-card p-4 shadow-sm">
         <div className="flex items-center gap-1">
@@ -66,7 +66,7 @@ function MessageBubble({ message }: { message: Message }) {
   return (
     <div className="flex items-start gap-4 mr-auto max-w-2xl" data-testid={`message-assistant-${message.id}`}>
       <Avatar className="h-10 w-10 border border-border flex-shrink-0">
-        <AvatarFallback className="bg-primary/10 text-primary font-serif text-sm">RS</AvatarFallback>
+        <AvatarFallback className="bg-primary/10 text-primary font-serif text-sm">WG</AvatarFallback>
       </Avatar>
       <div className="rounded-2xl rounded-tl-sm border bg-card p-4 shadow-sm">
         <p className="text-base leading-relaxed whitespace-pre-wrap">{message.content}</p>
@@ -80,11 +80,11 @@ function WelcomeScreen({ onQuestionClick }: { onQuestionClick: (question: string
     <div className="flex flex-col items-center justify-center h-full px-4 py-8" data-testid="welcome-screen">
       <div className="max-w-2xl text-center space-y-6">
         <Avatar className="h-20 w-20 mx-auto border-2 border-primary/20">
-          <AvatarFallback className="bg-primary/10 text-primary font-serif text-2xl">RS</AvatarFallback>
+          <AvatarFallback className="bg-primary/10 text-primary font-serif text-2xl">WG</AvatarFallback>
         </Avatar>
         <div className="space-y-3">
-          <h1 className="text-3xl font-semibold font-serif text-foreground" data-testid="text-welcome-title">
-            Guten Tag, ich bin Rudolf Steiner
+          <h1 className="text-3xl font-semibold font-serif text-foreground tracking-wide" data-testid="text-welcome-title">
+            Willkommen bei WaldiGPT
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto">
             Ich freue mich, mit Ihnen über die Waldorfpädagogik, die Anthroposophie und die ganzheitliche 
@@ -218,10 +218,10 @@ export default function Chat() {
         <div className="flex items-center justify-between h-full px-4 md:px-6 max-w-4xl mx-auto w-full gap-4">
           <div className="flex items-center gap-3">
             <Avatar className="h-9 w-9 border border-border">
-              <AvatarFallback className="bg-primary/10 text-primary font-serif text-xs">RS</AvatarFallback>
+              <AvatarFallback className="bg-primary/10 text-primary font-serif text-xs">WG</AvatarFallback>
             </Avatar>
-            <h1 className="font-serif font-semibold text-lg text-foreground" data-testid="text-header-title">
-              Rudolf Steiner Assistent
+            <h1 className="font-serif font-semibold text-xl text-foreground tracking-wide" data-testid="text-header-title">
+              WaldiGPT
             </h1>
           </div>
           <Button
@@ -285,7 +285,7 @@ export default function Chat() {
             </Button>
           </div>
           <p className="text-xs text-muted-foreground text-center mt-3">
-            KI-generierte Antworten basieren auf Rudolf Steiners Lehren und der Waldorfpädagogik
+            WaldiGPT antwortet im Geiste Rudolf Steiners
           </p>
         </div>
       </div>
