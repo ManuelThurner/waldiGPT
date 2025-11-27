@@ -8,6 +8,11 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
+  // Health check endpoint for Render
+  app.get("/health", (_req, res) => {
+    res.status(200).json({ status: "ok" });
+  });
+
   app.post("/api/chat", async (req, res) => {
     try {
       const result = chatRequestSchema.safeParse(req.body);
